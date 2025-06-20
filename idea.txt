@@ -1,0 +1,9 @@
+AI_AGENT_BASIC/
+│
+├── main.py           # Entry point, agent logic
+├── parser.py         # Document parsing & chunking
+├── embedder.py       # Embedding logic
+├── vectordb.py       # FAISS vector DB logic
+├── retriever.py      # Retrieval logic
+├── generator.py      # Llama-3 generation logic
+├── requirements.txt

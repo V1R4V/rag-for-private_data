@@ -1,0 +1,27 @@
+# Core libraries
+requests==2.32.3
+ipykernel==6.29.4
+python-dotenv==1.1.0
+pydantic==2.5.3
+
+# Doc parser
+docling
+
+# Embedding and RAG stack
+InstructorEmbedding==1.0.1
+sentence-transformers==2.2.2
+huggingface_hub==0.19.4
+torch==2.2.2
+chromadb==0.4.24
+
+# Vector storage
+lancedb==0.24.0
+
+# App layer
+streamlit==1.34.0
+
+# Tokenizer (optional for chunking/token-counting)
+tiktoken==0.7.0
+
+# Langchain for chaining and orchestration
+langchain==0.1.17
