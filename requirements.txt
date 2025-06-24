@@ -1,27 +1,23 @@
-# Core libraries
-requests==2.32.3
-ipykernel==6.29.4
-python-dotenv==1.1.0
-pydantic==2.5.3
-
-# Doc parser
-docling
-
-# Embedding and RAG stack
-InstructorEmbedding==1.0.1
+# Core ML & Embeddings
 sentence-transformers==2.2.2
-huggingface_hub==0.19.4
-torch==2.2.2
+torch>=1.13.0
+
+# LLMs and Tokenizers
+transformers==4.40.0
+huggingface-hub>=0.22.2
+
+# Document Parsing
+docling @ git+https://github.com/IBM/docling.git
+
+# ChromaDB (Vector DB)
 chromadb==0.4.24
 
-# Vector storage
-lancedb==0.24.0
+# HTTP Requests for Ollama or APIs
+requests>=2.31.0
 
-# App layer
-streamlit==1.34.0
+# Utility Libraries
+pandas>=2.0.0
+tqdm>=4.66.0
 
-# Tokenizer (optional for chunking/token-counting)
-tiktoken==0.7.0
-
-# Langchain for chaining and orchestration
-langchain==0.1.17
+# Optional but useful
+rich>=13.5.2  # For CLI formatting (if used in future)

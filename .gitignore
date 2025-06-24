@@ -39,6 +39,9 @@ parsed_output.md
 main.py
 tools.py
 config.py
+scalable.py
+rfi_cli.py
+learnings.md
 
 # Document files (if they're generated/temporary)
 *.pdf
@@ -71,3 +74,6 @@ logs/
 .pytest_cache/
 .coverage
 htmlcov/
+
+# test outputs
+testTracker.txt
