@@ -18,6 +18,7 @@ requests>=2.31.0
 # Utility Libraries
 pandas>=2.0.0
 tqdm>=4.66.0
+InstructorEmbedding==1.0.1
 
 # Optional but useful
 rich>=13.5.2  # For CLI formatting (if used in future)

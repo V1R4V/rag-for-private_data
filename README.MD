@@ -33,7 +33,7 @@ In the world of automation, I felt some tasks can be easily automated like filli
 
 ```bash
 rag-assistant/
-├── rag_rfp_assistant.py         # Main class + pipeline logic
+├── rag_assistant.py         # Main class + pipeline logic
 ├── data/
 │   └── sample_rfi.xlsx          # Sample enterprise RFI
 ├── requirements.txt
@@ -60,23 +60,11 @@ ollama serve  # Ensure Ollama server is running
 ### 3. Run the Assistant
 
 ```bash
-python rag_rfp_assistant.py
+python rag_assistant.py
 ```
-
-You can also use it modularly in your code:
-
-```python
-from rag_rfp_assistant import RAGRFPFiller
-rag = RAGRFPFiller(llm_type="ollama")
-rag.initialize_components()
-chunks = rag.process_document("data/sample_rfi.xlsx")
-rag.store_chunks(chunks)
-rag.answer_rfp_question("How many offices does the company have?")
-```
-
 ---
 
-## 🔄 Workflow Summary
+## 🔄 My Workflow Summary
 
 ```text
 +--------------------------+
@@ -126,7 +114,7 @@ rag.answer_rfp_question("How many offices does the company have?")
 VDart Inc
 
 > How many US locations does it operate?
-1.0 (based on retrieved RFI chunk)
+15 (based on retrieved RFI chunk)
 ```
 
 ---
@@ -141,28 +129,11 @@ VDart Inc
 
 ---
 
-## 🚀 Future Enhancements
+## 🚀 UPDATES!
 
-* [ ] Web UI with Streamlit or Flask
-* [ ] Retrieval scoring and ranking
-* [ ] Add authentication for internal usage
-* [ ] Support real-time document ingestion via API
-
----
-
-## 🎓 Learning Outcomes
-
-This project showcases your ability to:
-
-* Understand document parsing and NLP pipelines
-* Integrate vector stores and embeddings
-* Use modern LLMs responsibly and efficiently
-* Write reusable, modular code for production-like tasks
+*  Web UI with Streamlit or Flask
+*  Retrieval scoring and ranking
+*  Add authentication for internal usage
+*  Support real-time document ingestion via API
 
 ---
-
-## 📗 Attribution
-
-This public version is a generalization of an enterprise use case developed under NDA. No proprietary content or identifiers are included.
-
-*Built with learning, ethics, and AI.*
